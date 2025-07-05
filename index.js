@@ -19,15 +19,13 @@ function genPwds() {
 }
 
 function copyPwd1() {
-    let copyText = document.getElementById("pwd-1")
-    copyText.select()
+    let copyText = document.getElementById("pwd-1").textContent
     navigator.clipboard.writeText(copyText.value)
     alert("Copied!")
 }
 
 function copyPwd2() {
-    let copyText = document.getElementById("pwd-1")
-    copyText.select()
+    let copyText = document.getElementById("pwd-1").textContent
     navigator.clipboard.writeText(copyText.value)
     alert("Copied!")
 }
