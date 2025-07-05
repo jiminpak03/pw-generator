@@ -6,6 +6,7 @@ let pwdLength = 15
 function setLength() {
     pwdLength = prompt("Please enter the desired number of characters: ")
 }
+
 function genPwds() {
     document.getElementById("pwd-1").textContent = ""
     document.getElementById("pwd-2").textContent = ""
@@ -31,3 +32,7 @@ function copyPwd2() {
     alert("Copied!")
 }
 
+window.setLength = setLength
+window.genPwds = genPwds
+window.copyPwd1 = copyPwd1
+window.copyPwd2 = copyPwd2
